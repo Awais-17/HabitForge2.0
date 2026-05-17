@@ -1,0 +1,42 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\mdawa\\OneDrive\\Desktop\\rojects\\Internship pj\\server\\contracts\\HabitForge.sol": {
+      "lastModificationDate": 1779050454962,
+      "contentHash": "074d7250d8f3268bb49639985a5012fe",
+      "sourceName": "contracts/HabitForge.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "HabitForge"
+      ]
+    }
+  }
+}

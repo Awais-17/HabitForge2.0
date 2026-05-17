@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: habitforge
+    env: node
+    plan: free
+    region: oregon
+    branch: main
+    # Node version environment (Render reads .node-version or package.json engines)
+    buildCommand: |
+      cd client && npm install && npm run build && cd ../server && npm install && npm run build
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGIN
+        value: "https://habitforge.onrender.com"  # Update with your actual domain
+    disk:
+      name: tmp
+      mountPath: /tmp
+      sizeGB: 1
