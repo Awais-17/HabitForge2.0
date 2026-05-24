@@ -8,7 +8,7 @@ services:
     # Node version environment (Render reads .node-version or package.json engines)
     buildCommand: |
       cd client && npm install && npm run build && cd ../server && npm install && npm run build
-    startCommand: cd server && npm start
+    startCommand: cd server && (npx hardhat node --config hardhat.config.cjs &) && sleep 3 && npm start
     envVars:
       - key: NODE_ENV
         value: production

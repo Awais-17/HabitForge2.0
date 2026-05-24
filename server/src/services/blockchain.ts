@@ -18,7 +18,7 @@ const SERVER_ROOT = fs.existsSync(HARDHAT_CONFIG)
 
 let provider: ethers.JsonRpcProvider;
 let wallet: ethers.Wallet;
-let contract: ethers.Contract;
+let contract: any;
 
 const HARDHAT_RPC = process.env.BLOCKCHAIN_RPC_URL || 'http://127.0.0.1:8545';
 
